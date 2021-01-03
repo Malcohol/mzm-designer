@@ -8,12 +8,40 @@ I wrote this around 2010 to create the help create most of the extra levels I sh
 [1k MazezaM](https://github.com/Malcohol/1kMazezaM).
 
 I'm still very proud of the original 10 levels I shipped with [the original MazezaM](https://github.com/Malcohol/ZXMazezaM) back in 2002.
-However, creating levels purely by hand is very time-consuming, since potential levels have to be carefully playtested to ensure they don't have easy solutions.
-It is possible to use this code to entirely automate the process of creating levels, but I've found that such levels tend to be too difficult, and are not amenable to high-level reasoning.
-(It is likely that a very clever metric or machine learning could overcome this, but that's beyond the scope of this project.)
-The last level of the 1k MazezaM level-set ("The Beast") is an example of a mostly automated level, and I personally find it horribly difficult.
+However, creating levels solely by hand is very time-consuming, since potential levels have to be carefully playtested to ensure they don't have easy solutions.
+The mzm-designer assistant lets you experiment with a level design, while it solves the level in the background and gives it a rough quality score.
 
-All software is licensed under the GNU General Public License version 3.
+```
+┌────────────────────┬────────── MazezaM Designer ─────────────────────────────┐
+│       Editor       │                                                         │
+│                    │                                                         │
+│ q quit             │                                                         │
+│ s save             │                                                         │
+│ -/+ improver-/+    │                                                         │
+│ p play             │                                                         │
+│ v view             │                         ########                        │
+│ I improve          │                         #  $  $#                        │
+│ b block            │                         # $ $$ #                        │
+│ g gap              │                         #$ $ $ *                        │
+│ s save             │                         +  $$ $#                        │
+│ SPACE toggle       │                         ########                        │
+│ DEL delete         │                                                         │
+│ BS backspace       │                                                         │
+│ </> shift l/r      │                                                         │
+│ {/} height -/+     │                                                         │
+│ [/] width -/+      │                                                         │
+│ m(M) (un)select    │                                                         │
+│ a(A) (un)selectAll ├─────────────────────────────────────────────────────────┤
+│ C clear            │ Level number:       1*      Rating:           2.63      │
+│ R randomize        │ Improver radius:     5      # Moves:            46      │
+│                    │                             # Pushes:           19      │
+└────────────────────┴─────────────────────────────────────────────────────────┘
+```
+
+It is possible to use this code to entirely automate the process of creating levels, but I've found that such levels are rarely fun. 
+They tend to be too difficult, and are not amenable to high-level reasoning.
+(It is likely that a very clever metric or machine learning could overcome this, but that's beyond the scope of this project.)
+The last level of the 1k MazezaM level-set (level 30, "The Beast") is an example of a primarily automated level, and I personally find it horribly difficult.
 
 ## Important disclaimer
 
@@ -41,3 +69,6 @@ mzm-designer - An interactive program to help design MazezaM puzzles.
 The UI is written using the ncurses library.
 I don't remember the reason :/
 
+## LICENSE
+
+All software is licensed under the GNU General Public License version 3.
