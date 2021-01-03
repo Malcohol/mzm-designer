@@ -4,7 +4,7 @@ A level-design assistant for creating MazezaM levels
 ## INTRODUCTION
 
 The software is a suite of tools for solving and designing MazezaM puzzles. 
-I wrote this around 2010 to create the help create most of the extra levels I shipped with
+I wrote this around 2010 to help create the extra levels I shipped with
 [1k MazezaM](https://github.com/Malcohol/1kMazezaM).
 
 I'm still very proud of the original 10 levels I shipped with [the original MazezaM](https://github.com/Malcohol/ZXMazezaM) back in 2002.
