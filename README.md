@@ -15,6 +15,12 @@ The last level of the 1k MazezaM level-set ("The Beast") is an example of a most
 
 All software is licensed under the GNU General Public License version 3.
 
+## Important disclaimer
+
+Prior to pushing this to gitHub, I did only minor testing of mzm-designer.
+Other than that, I had neither built nor run this program in about 10 years.
+Since it was primarily an internal project, there may be bugs and pitfalls I do not remember.
+
 ## Included projects
 
 mzmslv - a library which offers some standard search algorithms (e.g.
